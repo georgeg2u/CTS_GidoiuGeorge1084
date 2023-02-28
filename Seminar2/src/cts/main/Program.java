@@ -5,16 +5,19 @@ import java.util.List;
 
 
 import cts.clase.Angajat;
-import cts.clase.Utils;
+import cts.clase.Aplicant;
+import cts.clase.reader.ReaderAngajat;
+import cts.clase.reader.ReaderAplicant;
 
 
 public class Program {
 
 	public static void main(String[] args) {
-		List<Angajat> listaAngajati;
+		List<Aplicant> listaAngajati;
+		ReaderAngajat readerAngajat = new ReaderAngajat();
 		try {
-			listaAngajati = Utils.readAngajati("angajati.txt");
-			for(Angajat angajat:listaAngajati)
+			listaAngajati = readerAngajat.readAplicants("angajati.txt");
+			for(Aplicant angajat:listaAngajati)
 				System.out.println(angajat.toString());
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
