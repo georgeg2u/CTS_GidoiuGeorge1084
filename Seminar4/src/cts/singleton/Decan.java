@@ -1,6 +1,7 @@
 package cts.singleton;
 
 public class Decan {
+    //eager initialization
     private String nume;
 
     private static final Decan instanta = new Decan("Ion");

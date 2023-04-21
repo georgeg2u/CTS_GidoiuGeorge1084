@@ -37,5 +37,4 @@ public class PacientBuilder implements  Builder{
         this.pacient.setPapuciDeCamera(papuciDeCamera);
         return this;
     }
-
 }

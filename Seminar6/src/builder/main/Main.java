@@ -13,8 +13,8 @@ public class Main {
         Pacient pacientNou3 = pacientBuilder.setPatRabatabil(true).setNume("Ana").build();
 
         System.out.println(pacient.toString());
-//        System.out.println(pacientNou.toString());
-//        System.out.println(pacientNou2.toString());
+        System.out.println(pacientNou.toString());
+        System.out.println(pacientNou2.toString());
         System.out.println(pacientNou3.toString());
 
 

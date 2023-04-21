@@ -13,6 +13,7 @@ public class Main {
         solutii.put("solutia1", (float)20);
         solutii.put("solutia2", (float)10);
         solutii.put("solutia3", (float)30);
+
         IReteta prototype = new Reteta("Reteta", solutii, 60);
         Reteta farmacie = (Reteta)prototype.copiaza();
         farmacie.setNume("Reteta farmaciei");
